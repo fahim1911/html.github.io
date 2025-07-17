@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+        scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+
+.nav{
+    max-width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+
+}
+
+.navbar{
+    width: 95%;
+    height: 80px;
+    
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+.navbar:hover{
+    transform: scale(1.01);
+    overflow: hidden;
+}
+
+
+h2{
+    margin: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: cornflowerblue;
+    z-index: 2;
+}
+
+
+ul{
+    margin: 20px;
+    z-index: 2;
+}
+
+li {
+    margin: 20px;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 2;
+
+}
+
+img{
+    width: 40%;
+    height: 650px;
+       border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-left: 40px;
+    margin-top: 40px;
+     cursor: pointer;
+    transition: transform 0.3s ease;
+    
+}
+
+img:hover{
+    transform: scale(1.03);
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.text{
+    width: 90%;
+    gap: 10px;
+    margin: 10px;
+    padding: 0px 0px;
+    position: absolute;
+    left:45%;
+    top: 20%;
+    margin-bottom: 0px;
+    
+
+}
+
+
+h1{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blueviolet;
+}
+
+p{
+    margin-top: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+    width:60%;
+    padding: 0px;
+}
+
+.searchbox{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 250px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.searchbox:hover{
+    width: 300px;
+}
+
+.searchbox input{
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+
+}
+
+.searchbox .icon{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease ;
+
+
+}
+
+.searchbox .icon:hover{
+    background-color:#4169E1 ;
+
+}
+
+.img2 {
+    position: absolute;
+    width:60%;
+    height: auto;
+    background-color: #fff;
+    display: inline-block;
+    padding: 0px;
+     margin-top: 10px;
+     
+
+    
+    
+
+
+ 
+}   
+
+.img2 img {
+    width: 300px;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+    
+     
+  
+    
+
+}
+
+.btn2{
+     float: right;   
+     display: inline-block;
+     margin-top: 60px;
+     margin-right: 80px;
+     overflow: hidden;
+     
+     
+     
+
+}
+.btn2 button{
+    padding: 20px 30px;
+    background-color: #4169E1;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-right: 14px;
+    
+
+}
+
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 9999;
+    
+}
+
+.popup-box{
+    height: 200px;
+    width: 300px;
+    background: #ffefef; 
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+
+}
+.txt{
+    font-size: 30px;
+    line-height: 40px;
+    padding: 10px;
+}
+
+
+.closebtn{
+    padding: 8px 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    background: #000;
+    border-radius: 10px;
+}
+
+@keyframes zoomin{
+    from{
+        transform: scale(0);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomout{
+    from{
+        transform: scale(1);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.pop1{
+    cursor: pointer;
+}
+
+/* /*login box css* */

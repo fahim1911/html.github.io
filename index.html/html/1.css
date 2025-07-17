@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+
+}
+body{
+background-image: url(1.1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+min-height: 100vh;
+width: 100%;
+
+}
+
+
+
+.login{
+    padding: 10px 10px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    width: 300px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    transition: 0.7s;
+    cursor: pointer;
+    border: 1px solid #fff;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    
+    
+    
+   
+    
+
+}
+
+.login:hover{
+   
+    transform: scale(1.09);
+     backdrop-filter: blur(15px);
+     border: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0px;
+    font-family: Arial, Helvetica, sans-serif ;
+     color: #FFFAF0;
+}
+
+p{
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #FFFAF0;
+}
+
+hr{
+    margin: 10px;
+    margin-bottom: 0px;
+    color: #fff;
+
+}
+
+.inputs{
+    margin-top: 0px;
+    text-align: center;
+
+}
+
+input{
+    margin: 10px;
+    width: 200px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    padding: 7px 0px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+input:hover{
+transform: scale(1.07);
+}
+
+::placeholder{
+    color: #ffff;
+    
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 10px;
+}
+button{
+    padding: 6px 20px;
+    outline: none;
+    border: none;
+    background: #4169E1;
+    color: #fff;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+
+button:hover{
+    transform: scale(1.09);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: aqua;
+        transition: transform 0.3s ease;
+}
+
+a:hover{
+    text-decoration: underline;
+transform: scale(1.08);
+
+}
+
+
+.p2{
+    font-size: 10px;
+    color: lime;
+}
